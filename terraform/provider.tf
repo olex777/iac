@@ -3,6 +3,3 @@ provider "aws" {
   secret_key = 'wJalrXUtnFEMI/K7MDENG/bPxRfiOLEX777KEY'
   region     = "eu-central-1"
 }
-
-
-
