@@ -1,0 +1,2 @@
+AWS Access Key ID [None]: AKIAIOSFODNN6OLEX777
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiOLEX777KEY
