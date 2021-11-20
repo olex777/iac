@@ -6,7 +6,7 @@ resource "aws_instance" "linux-instance" {
 
   vpc_security_group_ids = [aws_security_group.lesson12-all.id]
 
-  key_name = "alfalinux"
+  key_name =  "alfalinux"
 
   tags = {
     "Name" = "linux-instance"
