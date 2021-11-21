@@ -3,6 +3,7 @@ resource "aws_key_pair" "terraform-iac" {
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDl6gBstadTdYPFbxmapP7TTWN3YowCp/jp+99V0rzyvo1eAUIunH0ZeSPBYX6ufp22IyioJS5GBdE7S8UEIFz8Nuner2pJQyHbOHdbYD/U4ItfqQ1GXND7UdOLigSWaxAspBxXR60VKSB5CJlrXVjYiky90H0xkFhqamwq6Jv9ECIlKJJMY7HcH3vEvjXbpSwBrTXWUG+YfQyvbyIqLZYFDSrxjM62YQ+TvuV01mwFY1oRm/Q9+9SFz0VeMJwBjsJPIaL/chORJWnmBNXppYHFU5IVlcskAoUFdHnLolTm4WfgTO2VwwbWYOf6qDw/oiETBWcjx9YpOVfdwJuer0Wt real777@gmail.com"
 }
 
+
 resource "aws_instance" "linux-instance" {
   ami           = "ami-009b16df9fcaac611"
   instance_type = "t2.micro"
