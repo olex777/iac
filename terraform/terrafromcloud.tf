@@ -3,13 +3,11 @@ terraform {
     organization = "Lesson12_olex777"
 
     workspaces {
-      name = "alfa"
+      name = "olex777"
     }
   }
 }
 
-
 provider "aws" {
   region = "eu-central-1"
 }
-
