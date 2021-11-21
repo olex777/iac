@@ -41,7 +41,7 @@ CREATE TABLE `lesson12` (
 --
 
 INSERT INTO `lesson12` (`id`, `firstname`, `lastname`, `email`, `reg_date`) VALUES
-(1, 'Nicky', 'Lemeshko', 'admin@mdsn.tk', '2021-02-16 07:23:39');
+(1, 'Olex', 'Chis', 'admin@alfabank.kiev.ua', '2021-02-16 07:23:39');
 
 --
 -- Индексы сохранённых таблиц
