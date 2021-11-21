@@ -5,9 +5,14 @@ resource "aws_instance" "linux-instance" {
   subnet_id = aws_subnet.lesson12-subnet-public-3.id
 
   vpc_security_group_ids = [aws_security_group.lesson12-all.id]
-
+  connection {
+      type        = "ssh"
+      host        = self.public_ip
+      user        = "ubuntu"
+      private_key = file("/root/.ssh/alfalinux.pem")
+      timeout     = "4m"
+   }
   key_name =  "alfalinux"
-  private_key = "alfalinux.pem"
 
   tags = {
     "Name" = "linux-instance"
