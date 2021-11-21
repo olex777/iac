@@ -6,7 +6,7 @@ resource "aws_vpc" "lesson12-vpc" {
   instance_tenancy     = "default"
 
   tags = {
-    "Name" = "lesson12-vpc"
+    "Name" = "lesson12-vpc-final"
   }
 }
 
@@ -17,7 +17,7 @@ resource "aws_subnet" "lesson12-subnet-public-1" {
   availability_zone       = "eu-central-1a"
 
   tags = {
-    "Name" = "lesson12-subnet-public-1"
+    "Name" = "lesson12-subnet-public-1-final"
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_subnet" "lesson12-subnet-public-2" {
   availability_zone       = "eu-central-1b"
 
   tags = {
-    "Name" = "lesson12-subnet-public-2"
+    "Name" = "lesson12-subnet-public-2-final"
   }
 }
 
@@ -39,7 +39,7 @@ resource "aws_subnet" "lesson12-subnet-public-3" {
   availability_zone       = "eu-central-1c"
 
   tags = {
-    "Name" = "lesson12-subnet-public-3"
+    "Name" = "lesson12-subnet-public-3-final"
   }
 }
 
@@ -47,7 +47,7 @@ resource "aws_internet_gateway" "lesson12-igw" {
   vpc_id = aws_vpc.lesson12-vpc.id
 
   tags = {
-    "Name" = "lesson12-igw"
+    "Name" = "lesson12-igw-final"
   }
 }
 
@@ -60,7 +60,7 @@ resource "aws_route_table" "lesson12-public-crt" {
   }
 
   tags = {
-    Name = "lesson12-public-crt"
+    Name = "lesson12-public-crt-final"
   }
 }
 
@@ -96,6 +96,6 @@ resource "aws_security_group" "lesson12-all" {
   }
 
   tags = {
-    "Name" = "lesson12-all"
+    "Name" = "lesson12-all-final"
   }
 }
