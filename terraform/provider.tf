@@ -1,11 +1,13 @@
 terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "3.65.0"
+  backend "remote" {
+    organization = "Lesson12_olex777"
+
+    workspaces {
+      name = "alfa"
     }
   }
 }
+
 provider "aws" {
   region = "eu-central-1"
 }
