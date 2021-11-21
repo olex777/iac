@@ -1,6 +1,6 @@
-resource "aws_key_pair" "alfalinux" {
-  key_name = "alfalinux"
-  private_key = "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUxOQAAACCP8JjT4hIBLb5mv/R3WbYsUnPdqXfK/DhEsblxSEVI9AAAAIiqKCoDqigqAwAAAAtzc2gtZWQyNTUxOQAAACCP8JjT4hIBLb5mv/R3WbYsUnPdqXfK/DhEsblxSEVI9AAAAEAwUQIBATAFBgMrZXAEIgQgRQPYoqJzwCNCyP+456qgsY/wmNPiEgEtvma/9HdZtixSc92pd8r8OESxuXFIRUj0AAAAAAECAwQF"
+resource "aws_key_pair" "terraform-iac" {
+  key_name = "terraform-iac"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDl6gBstadTdYPFbxmapP7TTWN3YowCp/jp+99V0rzyvo1eAUIunH0ZeSPBYX6ufp22IyioJS5GBdE7S8UEIFz8Nuner2pJQyHbOHdbYD/U4ItfqQ1GXND7UdOLigSWaxAspBxXR60VKSB5CJlrXVjYiky90H0xkFhqamwq6Jv9ECIlKJJMY7HcH3vEvjXbpSwBrTXWUG+YfQyvbyIqLZYFDSrxjM62YQ+TvuV01mwFY1oRm/Q9+9SFz0VeMJwBjsJPIaL/chORJWnmBNXppYHFU5IVlcskAoUFdHnLolTm4WfgTO2VwwbWYOf6qDw/oiETBWcjx9YpOVfdwJuer0Wt real777@gmail.com"
 }
 
 resource "aws_instance" "linux-instance" {
