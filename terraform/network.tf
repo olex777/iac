@@ -1,5 +1,5 @@
 resource "aws_vpc" "lesson12-vpc" {
-  cidr_block           = "172.31.0.0/16"
+  cidr_block           = "10.10.0.0/16"
   enable_dns_support   = true
   enable_dns_hostnames = true
   enable_classiclink   = false
@@ -12,7 +12,7 @@ resource "aws_vpc" "lesson12-vpc" {
 
 resource "aws_subnet" "lesson12-subnet-public-1" {
   vpc_id                  = aws_vpc.lesson12-vpc.id
-  cidr_block              = "172.31.0.0/20"
+  cidr_block              = "10.10.0.0/20"
   map_public_ip_on_launch = true
   availability_zone       = "eu-central-1a"
 
@@ -23,7 +23,7 @@ resource "aws_subnet" "lesson12-subnet-public-1" {
 
 resource "aws_subnet" "lesson12-subnet-public-2" {
   vpc_id                  = aws_vpc.lesson12-vpc.id
-  cidr_block              = "172.31.16.0/20"
+  cidr_block              = "10.10.16.0/20"
   map_public_ip_on_launch = true
   availability_zone       = "eu-central-1b"
 
