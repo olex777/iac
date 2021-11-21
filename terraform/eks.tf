@@ -16,7 +16,7 @@ provider "kubernetes" {
 
 module "my-cluster" {
   source          = "terraform-aws-modules/eks/aws"
-  cluster_name    = "lesson12-eks"
+  cluster_name    = "lesson12-iac"
   cluster_version = "1.18"
   subnets         = [aws_subnet.lesson12-subnet-public-1.id, aws_subnet.lesson12-subnet-public-2.id]
   vpc_id          = aws_vpc.lesson12-vpc.id

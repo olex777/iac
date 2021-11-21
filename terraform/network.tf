@@ -34,7 +34,7 @@ resource "aws_subnet" "lesson12-subnet-public-2" {
 
 resource "aws_subnet" "lesson12-subnet-public-3" {
   vpc_id                  = aws_vpc.lesson12-vpc.id
-  cidr_block              = "172.31.32.0/20"
+  cidr_block              = "10.10.32.0/20"
   map_public_ip_on_launch = true
   availability_zone       = "eu-central-1c"
 
