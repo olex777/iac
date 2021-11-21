@@ -11,13 +11,7 @@ resource "aws_instance" "linux-instance" {
   subnet_id = aws_subnet.lesson12-subnet-public-3.id
 
   vpc_security_group_ids = [aws_security_group.lesson12-all.id]
-  connection {
-      type        = "ssh"
-      host        = self.public_ip
-      user        = "ubuntu"
-      timeout     = "4m"
-   }
-
+  key_name = "terraform-iac" 
   tags = {
     "Name" = "linux-instance"
   }
