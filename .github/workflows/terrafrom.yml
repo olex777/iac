@@ -40,9 +40,9 @@ jobs:
       - name: Terraform Plan Status
         working-directory: 'terraform'
         if: steps.plan.outcome == 'failure'
-        run: exit 1
-        
-        - name: terraform destroy
+        run: exit 1      
+      - name: terraform destroy
         working-directory: 'terraform'
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform destroy -auto-approve
+      
